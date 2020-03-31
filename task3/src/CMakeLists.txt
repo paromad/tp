@@ -1,6 +1,6 @@
 add_library(buffer SHARED buffer.cpp)
 
-set_target_properties(bufer PROPERTIES PUBLIC_HEADER ../include/buffer.h)
+set_target_properties(buffer PROPERTIES PUBLIC_HEADER ../include/buffer.h)
 
 install(TARGETS buffer
 	RUNTIME DESTINATION bin
