@@ -45,7 +45,7 @@ jobs:
         working-directory: task4
 
     - name : UploadArtifacts
-      uses: actions/download-artifact@v1.0.0
+      uses: actions/upload-artifact@v1.0.0
       with:
         name: Distributive
         path: ./task4/build/exe
