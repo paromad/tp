@@ -43,3 +43,9 @@ jobs:
         exec-path:  ./bin/CTestExe
         report-path: report.xml
         working-directory: task4
+
+    - name : UploadArtifacts
+      uses: actions/download-artifact@v1.0.0
+      with:
+        name: Distributive
+        path: ./task4/build/exe
