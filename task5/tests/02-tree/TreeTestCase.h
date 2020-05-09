@@ -9,6 +9,10 @@
 #include <boost/filesystem/path.hpp>
 
 class TreeTestCase : public ::testing::Test {
+public:
+    static void SetUpTestCase();
+    static void TearDownTestCase();
+    static boost::filesystem::path dir;
 };
 
 
